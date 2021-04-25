@@ -1,6 +1,4 @@
-# TODO: Write documentation for `Tiktoker`
-module Tiktoker
-  VERSION = "0.1.0"
+require "./tiktoker/*"
 
-  # TODO: Put your code here
+module Tiktoker
 end
