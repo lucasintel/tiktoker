@@ -1,0 +1,47 @@
+version: "3.8"
+
+services:
+  runner:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+      args:
+        USER_ID: "${UID:-1000}"
+    image: tiktoker:1.0.0
+    restart: "no"
+    user: "${UID:-1000}:${UID:-1000}"
+    stdin_open: true
+    tty: true
+    environment:
+      SIGNATURE_SERVER_URL: "http://signer:3000"
+    volumes:
+      - .:/app:cached
+    tmpfs:
+      - /tmp
+
+  tiktok-passport:
+    image: tiktok-passport:0.3.0
+    restart: "always"
+    environment:
+      SELENIUM_BROWSER_URL: "http://chrome:4444/wd/hub"
+    depends_on:
+      chrome:
+        condition: service_healthy
+
+  chrome:
+    image: selenium/standalone-chrome:90.0.4430.85
+    restart: "always"
+    environment:
+      SE_NODE_MAX_SESSIONS: 12
+      SE_NODE_OVERRIDE_MAX_SESSIONS: "true"
+      SE_NODE_SESSION_TIMEOUT: 86400
+      SCREEN_WIDTH: 1920
+      SCREEN_HEIGHT: 1080
+      START_XVFB: "false"
+    volumes:
+      - /dev/shm:/dev/shm
+    healthcheck:
+      test: "/opt/bin/check-grid.sh --host 0.0.0.0 --port 4444"
+      interval: 15s
+      timeout: 30s
+      retries: 5

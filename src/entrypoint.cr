@@ -1,0 +1,3 @@
+require "./tiktoker"
+
+Tiktoker.run
