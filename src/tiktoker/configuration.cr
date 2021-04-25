@@ -1,5 +1,5 @@
 module Tiktoker
-  class Config
+  class Configuration
     TIKTOK_HOST      = "m.tiktok.com"
     TIKTOK_TEST_HOST = "t.tiktok.com"
     TIKTOK_PORTAL    = "https://www.tiktok.com"
@@ -22,7 +22,7 @@ module Tiktoker
     property proxy_user : String?
     property proxy_pass : String?
 
-    # Timeouts
+    # Timeout
     property connect_timeout : Int32 = 5
     property write_timeout : Int32 = 5
     property read_timeout : Int32 = 60
