@@ -1,0 +1,26 @@
+version: 2.0
+shards:
+  admiral:
+    git: https://github.com/jwaldrip/admiral.cr.git
+    version: 1.11.4
+
+  crest:
+    git: https://github.com/kandayo/crest.git
+    version: 0.27.0+git.commit.03cc6163aec8420691e141a21c3546e2af7d8db9
+
+  http-client-digest_auth:
+    git: https://github.com/mamantoha/http-client-digest_auth.git
+    version: 0.6.0
+
+  http_proxy:
+    git: https://github.com/mamantoha/http_proxy.git
+    version: 0.8.0
+
+  retriable:
+    git: https://github.com/sija/retriable.cr.git
+    version: 0.2.3
+
+  tallboy:
+    git: https://github.com/epoch/tallboy.git
+    version: 0.9.3
+

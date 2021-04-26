@@ -26,5 +26,12 @@ module Tiktoker
     property connect_timeout : Int32 = 5
     property write_timeout : Int32 = 5
     property read_timeout : Int32 = 60
+
+    # Error Handling
+    property retry_attempts : Int32 = 5
+
+    def with
+      yield(self)
+    end
   end
 end

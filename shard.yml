@@ -10,4 +10,15 @@ targets:
 
 crystal: 1.0.0
 
+dependencies:
+  admiral:
+    github: jwaldrip/admiral.cr
+  crest:
+    github: kandayo/crest
+    branch: kdy/expose-timeouts
+  retriable:
+    github: Sija/retriable.cr
+  tallboy:
+    github: epoch/tallboy
+
 license: MIT
