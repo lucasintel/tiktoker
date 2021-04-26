@@ -1,5 +1,5 @@
 module Tiktoker
-  struct Creator
+  struct Tiktok::Creator
     struct Stats
       include JSON::Serializable
       include JSON::Serializable::Unmapped

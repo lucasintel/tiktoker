@@ -1,7 +1,7 @@
 require "./creator/*"
 
 module Tiktoker
-  struct Creator
+  struct Tiktok::Creator
     include JSON::Serializable
     include JSON::Serializable::Unmapped
 
@@ -58,19 +58,19 @@ module Tiktoker
 
     @[JSON::Field(
       key: "commentSetting",
-      converter: Enum::ValueConverter(Tiktoker::Creator::PrivacyToggle)
+      converter: Enum::ValueConverter(Tiktoker::Tiktok::Creator::PrivacyToggle)
     )]
     getter comment_setting : PrivacyToggle?
 
     @[JSON::Field(
       key: "duetSetting",
-      converter: Enum::ValueConverter(Tiktoker::Creator::PrivacyToggle)
+      converter: Enum::ValueConverter(Tiktoker::Tiktok::Creator::PrivacyToggle)
     )]
     getter duet_setting : PrivacyToggle?
 
     @[JSON::Field(
       key: "stitchSetting",
-      converter: Enum::ValueConverter(Tiktoker::Creator::PrivacyToggle)
+      converter: Enum::ValueConverter(Tiktoker::Tiktok::Creator::PrivacyToggle)
     )]
     getter stitch_setting : PrivacyToggle?
 

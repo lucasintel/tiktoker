@@ -1,5 +1,5 @@
 module Tiktoker
-  struct Video
+  struct Tiktok::Video
     struct Duet
       include JSON::Serializable
       include JSON::Serializable::Unmapped

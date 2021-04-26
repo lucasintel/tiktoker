@@ -1,5 +1,5 @@
 module Tiktoker
-  struct InitialProps
+  struct Tiktok::InitialProps
     struct UserInfo
       include JSON::Serializable
 

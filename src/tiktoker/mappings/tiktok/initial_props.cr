@@ -1,7 +1,7 @@
 require "./initial_props/*"
 
 module Tiktoker
-  struct InitialProps
+  struct Tiktok::InitialProps
     include JSON::Serializable
 
     @[JSON::Field(key: "userInfo")]
