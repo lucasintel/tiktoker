@@ -4,10 +4,10 @@ require "json"
 
 require "./tiktoker/*"
 
-module Tiktoker
+module TikToker
   class_getter config = Configuration.new
 
   def self.run
-    Tiktoker::CLI.run
+    TikToker::CLI.run
   end
 end

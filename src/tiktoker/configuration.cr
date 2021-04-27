@@ -1,4 +1,4 @@
-module Tiktoker
+module TikToker
   class Configuration
     TIKTOK_HOST      = "m.tiktok.com"
     TIKTOK_TEST_HOST = "t.tiktok.com"
@@ -6,7 +6,7 @@ module Tiktoker
 
     property signature_server_url : String = ENV["SIGNATURE_SERVER_URL"]? || ""
 
-    # Tiktok
+    # TikTok
     property tiktok_host : String = TIKTOK_HOST
     property tiktok_test_host : String = TIKTOK_TEST_HOST
     property tiktok_portal : String = TIKTOK_PORTAL

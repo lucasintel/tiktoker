@@ -1,6 +1,6 @@
 require "tallboy"
 
-module Tiktoker
+module TikToker
   class CLI::User < Admiral::Command
     define_argument user : String, required: true
 
@@ -8,17 +8,17 @@ module Tiktoker
       print_exception(ex)
     end
 
-    rescue_from Tiktoker::UserNotFoundError do |ex|
+    rescue_from TikToker::UserNotFoundError do |ex|
       print_exception(ex)
     end
 
-    rescue_from Tiktoker::HTTPError do |ex|
+    rescue_from TikToker::HTTPError do |ex|
       print_exception(ex)
     end
 
     def run
       identifier = Identifier.for(arguments.user)
-      initial_props = Tiktoker::Client.find_user(identifier.name)
+      initial_props = TikToker::Client.find_user(identifier.name)
 
       # TODO: Create our own interface for tiktok responses.
       user = initial_props.user_info.user

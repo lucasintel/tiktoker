@@ -1,4 +1,4 @@
-class Tiktoker::CLI
+class TikToker::CLI
   class InlineTable
     def self.with(&block)
       builder = new

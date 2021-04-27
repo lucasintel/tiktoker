@@ -1,3 +1,3 @@
 require "./tiktoker"
 
-Tiktoker.run
+TikToker.run

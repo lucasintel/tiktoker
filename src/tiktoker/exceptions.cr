@@ -1,4 +1,4 @@
-module Tiktoker
+module TikToker
   class UserNotFoundError < Exception
   end
 

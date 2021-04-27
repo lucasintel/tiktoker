@@ -1,4 +1,4 @@
-class Tiktoker::CLI
+class TikToker::CLI
   class User
     module Identifier
       DELIMITER = ':'

@@ -1,6 +1,6 @@
 require "./spec_helper"
 
-describe Tiktoker do
+describe TikToker do
   # TODO: Write tests
 
   it "works" do

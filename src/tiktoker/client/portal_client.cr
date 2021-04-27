@@ -1,23 +1,23 @@
-module Tiktoker
+module TikToker
   class Client::PortalClient
     USER_AGENT          = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
     INITIAL_PROPS_REGEX = /<script id="__NEXT_DATA__".*?>(.*?)<\/script>/
     REGEX_MATCH_POS     = 1
 
-    def find_user(username : String) : Tiktok::InitialProps
+    def find_user(username : String) : TikTok::InitialProps
       response = Crest.get(
         Util.build_profile_url(username),
         headers: {
           "User-Agent" => USER_AGENT,
         },
-        p_addr: Tiktoker.config.proxy_host,
-        p_port: Tiktoker.config.proxy_port,
-        p_user: Tiktoker.config.proxy_user,
-        p_pass: Tiktoker.config.proxy_pass,
-        connect_timeout: Tiktoker.config.connect_timeout,
-        write_timeout: Tiktoker.config.write_timeout,
-        read_timeout: Tiktoker.config.read_timeout,
-        logging: Tiktoker.config.verbose,
+        p_addr: TikToker.config.proxy_host,
+        p_port: TikToker.config.proxy_port,
+        p_user: TikToker.config.proxy_user,
+        p_pass: TikToker.config.proxy_pass,
+        connect_timeout: TikToker.config.connect_timeout,
+        write_timeout: TikToker.config.write_timeout,
+        read_timeout: TikToker.config.read_timeout,
+        logging: TikToker.config.verbose,
         handle_errors: false,
       )
 
@@ -39,7 +39,7 @@ module Tiktoker
 
       pull.on_key!("props") do
         pull.on_key!("pageProps") do
-          return Tiktok::InitialProps.new(pull)
+          return TikTok::InitialProps.new(pull)
         end
       end
     end

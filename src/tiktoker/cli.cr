@@ -1,4 +1,4 @@
-module Tiktoker
+module TikToker
   class CLI < Admiral::Command
     BANNER = <<-TXT
     Usage: tiktoker [command] [args]
@@ -31,7 +31,7 @@ module Tiktoker
         --quiet   # @flag This makes TikToker suitable as a cron job.
     TXT
 
-    define_version Tiktoker::VERSION
+    define_version TikToker::VERSION
     define_help custom: BANNER
 
     register_sub_command user : CLI::User, short: "u"
@@ -58,7 +58,7 @@ module Tiktoker
     define_flag quiet : Bool, default: false
 
     def run
-      Tiktoker.config.with do |config|
+      TikToker.config.with do |config|
         config.proxy_host = flags.proxy_host
         config.proxy_port = flags.proxy_port
         config.proxy_user = flags.proxy_user
