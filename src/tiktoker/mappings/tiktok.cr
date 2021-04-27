@@ -1,6 +1,6 @@
 require "./tiktok/*"
 
-module Tiktoker
-  module Tiktok
+module TikToker
+  module TikTok
   end
 end

@@ -1,7 +1,7 @@
 require "./video/*"
 
-module Tiktoker
-  struct Tiktok::Video
+module TikToker
+  struct TikTok::Video
     include JSON::Serializable
     include JSON::Serializable::Unmapped
 
