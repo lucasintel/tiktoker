@@ -1,0 +1,18 @@
+{
+  "status": "ok",
+  "data":{
+    "signed_at": 1619243209467,
+    "signature": "MOCKED_SIGNATURE",
+    "verify_fp": "MOCKED_VERIFYFP",
+    "signed_url": "https://MOCK_SIGNED_URL/1",
+    "navigator":{
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (Windows NT 10.0; Win64; x64) Chrome/88.0.4324.96 Safari/537.36",
+      "browser_name": "Mozilla",
+      "browser_version": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (Windows NT 10.0; Win64; x64) Chrome/88.0.4324.96 Safari/537.36",
+      "browser_language": "en-US",
+      "browser_platform": "Win32",
+      "screen_width": 1920,
+      "screen_height": 1080
+    }
+  }
+}

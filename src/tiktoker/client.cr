@@ -1,11 +1,14 @@
-require "./client/*"
-
 module TikToker
-  module Client
-    class_getter portal_client = Client::PortalClient.new
+  class Client
+    property portal_client = Client::PortalClient.new
+    property api_client = Client::WebApiClient.new
 
-    def self.find_user(username : String) : TikTok::InitialProps
-      portal_client.find_user(username: username)
-    end
+    # Portal interface.
+    delegate find_user, to: portal_client
+
+    # Web API interface.
+    delegate user_profile_feed, search_user, to: api_client
   end
 end
+
+require "./client/*"

@@ -1,11 +1,11 @@
 module TikToker
-  class UserNotFoundError < Exception
+  ##
+  # Requests
+
+  class RetriesExaustedError < Exception
   end
 
-  class ExtractionError < Exception
-  end
-
-  class HTTPError < Exception
+  class RequestError < Exception
     delegate :status, to: :response
 
     getter response : Crest::Response
@@ -16,5 +16,17 @@ module TikToker
     def message
       "Request failed with status #{status.code}: #{status.description}"
     end
+  end
+
+  ##
+  # User Profile
+
+  class UserNotFoundError < Exception
+  end
+
+  class NoPostsError < Exception
+  end
+
+  class PortalExtractionError < Exception
   end
 end

@@ -1,9 +1,5 @@
 version: 2.0
 shards:
-  admiral:
-    git: https://github.com/jwaldrip/admiral.cr.git
-    version: 1.11.4
-
   crest:
     git: https://github.com/kandayo/crest.git
     version: 0.27.0+git.commit.03cc6163aec8420691e141a21c3546e2af7d8db9
@@ -16,6 +12,10 @@ shards:
     git: https://github.com/mamantoha/http_proxy.git
     version: 0.8.0
 
+  progress:
+    git: https://github.com/kandayo/progress.cr.git
+    version: 0.1.2
+
   retriable:
     git: https://github.com/sija/retriable.cr.git
     version: 0.2.3
@@ -23,4 +23,8 @@ shards:
   tallboy:
     git: https://github.com/epoch/tallboy.git
     version: 0.9.3
+
+  webmock:
+    git: https://github.com/manastech/webmock.cr.git
+    version: 0.14.0+git.commit.42b347cdd64e13193e46167a03593944ae2b3d20
 

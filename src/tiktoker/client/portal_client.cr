@@ -4,11 +4,20 @@ module TikToker
     INITIAL_PROPS_REGEX = /<script id="__NEXT_DATA__".*?>(.*?)<\/script>/
     REGEX_MATCH_POS     = 1
 
+    # Find an user by *username*.
+    #
+    # ```
+    # client = Client::PortalClient.new
+    # client.find_user("charlidamelio") # => TikTok::UserProfile
+    # ```
     def find_user(username : String) : TikTok::InitialProps
       response = Crest.get(
         Util.build_profile_url(username),
         headers: {
           "User-Agent" => USER_AGENT,
+        },
+        cookies: {
+          "sessionid" => TikToker.config.session_id,
         },
         p_addr: TikToker.config.proxy_host,
         p_port: TikToker.config.proxy_port,
@@ -27,20 +36,17 @@ module TikToker
       when .not_found?
         raise UserNotFoundError.new("TikTok user #{username} does not exist.")
       else
-        raise HTTPError.new(response)
+        raise RequestError.new(response)
       end
 
-      match = response.body.match(INITIAL_PROPS_REGEX)
-      unless match
-        raise ExtractionError.new("Could not extract profile data from TikTok portal.")
-      end
+      if match = response.body.match(INITIAL_PROPS_REGEX)
+        pull = JSON::PullParser.new(match[REGEX_MATCH_POS])
 
-      pull = JSON::PullParser.new(match[REGEX_MATCH_POS])
-
-      pull.on_key!("props") do
-        pull.on_key!("pageProps") do
-          return TikTok::InitialProps.new(pull)
+        pull.on_key!("props") do
+          pull.on_key!("pageProps") { TikTok::InitialProps.new(pull) }
         end
+      else
+        raise PortalExtractionError.new("Could not extract data from TikTok.")
       end
     end
   end
