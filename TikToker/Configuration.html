@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.36.1">
+<meta name="crystal_docs.project_version" content="main">
+<meta name="crystal_docs.project_name" content="TikToker">
+
+
+    <link rel="canonical" href="https://absolab.xyz/tiktoker/TikToker/Configuration.html">
+
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/doc.js"></script>
+
+  <meta name="repository-name" content="TikToker">
+  <title>TikToker::Configuration - TikToker main</title>
+  <script type="text/javascript">
+    CrystalDocs.base_path = "../";
+  </script>
+</head>
+<body>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="project-summary">
+      <h1 class="project-name">
+        <a href="../index.html">
+          TikToker
+        </a>
+      </h1>
+
+      <span class="project-version">
+        main
+      </span>
+    </div>
+  </div>
+
+  <div class="search-results hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class=" " data-id="TikToker/OptionParser" data-name="optionparser">
+      <a href="../OptionParser.html">OptionParser</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="TikToker/TikToker" data-name="tiktoker">
+      <a href="../TikToker.html">TikToker</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="TikToker/TikToker/CLI" data-name="tiktoker::cli">
+      <a href="../TikToker/CLI.html">CLI</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="TikToker/TikToker/CLI/Command" data-name="tiktoker::cli::command">
+      <a href="../TikToker/CLI/Command.html">Command</a>
+      
+        <ul>
+  
+  <li class=" " data-id="TikToker/TikToker/CLI/Command/DownloadBatch" data-name="tiktoker::cli::command::downloadbatch">
+      <a href="../TikToker/CLI/Command/DownloadBatch.html">DownloadBatch</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/CLI/Command/DownloadUser" data-name="tiktoker::cli::command::downloaduser">
+      <a href="../TikToker/CLI/Command/DownloadUser.html">DownloadUser</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/CLI/Command/FindUser" data-name="tiktoker::cli::command::finduser">
+      <a href="../TikToker/CLI/Command/FindUser.html">FindUser</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/CLI/Command/SearchUser" data-name="tiktoker::cli::command::searchuser">
+      <a href="../TikToker/CLI/Command/SearchUser.html">SearchUser</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/CLI/CommandHelpers" data-name="tiktoker::cli::commandhelpers">
+      <a href="../TikToker/CLI/CommandHelpers.html">CommandHelpers</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/CLI/FileProcessor" data-name="tiktoker::cli::fileprocessor">
+      <a href="../TikToker/CLI/FileProcessor.html">FileProcessor</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/CLI/InlineTable" data-name="tiktoker::cli::inlinetable">
+      <a href="../TikToker/CLI/InlineTable.html">InlineTable</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="TikToker/TikToker/Client" data-name="tiktoker::client">
+      <a href="../TikToker/Client.html">Client</a>
+      
+        <ul>
+  
+  <li class=" " data-id="TikToker/TikToker/Client/PortalClient" data-name="tiktoker::client::portalclient">
+      <a href="../TikToker/Client/PortalClient.html">PortalClient</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/Client/WebApiClient" data-name="tiktoker::client::webapiclient">
+      <a href="../TikToker/Client/WebApiClient.html">WebApiClient</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" current" data-id="TikToker/TikToker/Configuration" data-name="tiktoker::configuration">
+      <a href="../TikToker/Configuration.html">Configuration</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/Delegate" data-name="tiktoker::delegate">
+      <a href="../TikToker/Delegate.html">Delegate</a>
+      
+    </li>
+  
+  <li class="parent " data-id="TikToker/TikToker/Downloader" data-name="tiktoker::downloader">
+      <a href="../TikToker/Downloader.html">Downloader</a>
+      
+        <ul>
+  
+  <li class=" " data-id="TikToker/TikToker/Downloader/VideoDownloader" data-name="tiktoker::downloader::videodownloader">
+      <a href="../TikToker/Downloader/VideoDownloader.html">VideoDownloader</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/NoPostsError" data-name="tiktoker::nopostserror">
+      <a href="../TikToker/NoPostsError.html">NoPostsError</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/PortalExtractionError" data-name="tiktoker::portalextractionerror">
+      <a href="../TikToker/PortalExtractionError.html">PortalExtractionError</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/ProfileIterator" data-name="tiktoker::profileiterator">
+      <a href="../TikToker/ProfileIterator.html">ProfileIterator</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/Request" data-name="tiktoker::request">
+      <a href="../TikToker/Request.html">Request</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/RequestBuilder" data-name="tiktoker::requestbuilder">
+      <a href="../TikToker/RequestBuilder.html">RequestBuilder</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/RequestError" data-name="tiktoker::requesterror">
+      <a href="../TikToker/RequestError.html">RequestError</a>
+      
+    </li>
+  
+  <li class="parent " data-id="TikToker/TikToker/RequestSigner" data-name="tiktoker::requestsigner">
+      <a href="../TikToker/RequestSigner.html">RequestSigner</a>
+      
+        <ul>
+  
+  <li class=" " data-id="TikToker/TikToker/RequestSigner/Backend" data-name="tiktoker::requestsigner::backend">
+      <a href="../TikToker/RequestSigner/Backend.html">Backend</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/RequestSigner/External" data-name="tiktoker::requestsigner::external">
+      <a href="../TikToker/RequestSigner/External.html">External</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/RetriesExaustedError" data-name="tiktoker::retriesexaustederror">
+      <a href="../TikToker/RetriesExaustedError.html">RetriesExaustedError</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/SecUID" data-name="tiktoker::secuid">
+      <a href="../TikToker/SecUID.html">SecUID</a>
+      
+    </li>
+  
+  <li class="parent " data-id="TikToker/TikToker/SignedRequest" data-name="tiktoker::signedrequest">
+      <a href="../TikToker/SignedRequest.html">SignedRequest</a>
+      
+        <ul>
+  
+  <li class=" " data-id="TikToker/TikToker/SignedRequest/Navigator" data-name="tiktoker::signedrequest::navigator">
+      <a href="../TikToker/SignedRequest/Navigator.html">Navigator</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="TikToker/TikToker/TikTok" data-name="tiktoker::tiktok">
+      <a href="../TikToker/TikTok.html">TikTok</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="TikToker/TikToker/TikTok/Creator" data-name="tiktoker::tiktok::creator">
+      <a href="../TikToker/TikTok/Creator.html">Creator</a>
+      
+        <ul>
+  
+  <li class=" " data-id="TikToker/TikToker/TikTok/Creator/PrivacyToggle" data-name="tiktoker::tiktok::creator::privacytoggle">
+      <a href="../TikToker/TikTok/Creator/PrivacyToggle.html">PrivacyToggle</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/TikTok/Creator/Stats" data-name="tiktoker::tiktok::creator::stats">
+      <a href="../TikToker/TikTok/Creator/Stats.html">Stats</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="TikToker/TikToker/TikTok/InitialProps" data-name="tiktoker::tiktok::initialprops">
+      <a href="../TikToker/TikTok/InitialProps.html">InitialProps</a>
+      
+        <ul>
+  
+  <li class=" " data-id="TikToker/TikToker/TikTok/InitialProps/Item" data-name="tiktoker::tiktok::initialprops::item">
+      <a href="../TikToker/TikTok/InitialProps/Item.html">Item</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/TikTok/InitialProps/UserInfo" data-name="tiktoker::tiktok::initialprops::userinfo">
+      <a href="../TikToker/TikTok/InitialProps/UserInfo.html">UserInfo</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/TikTok/Music" data-name="tiktoker::tiktok::music">
+      <a href="../TikToker/TikTok/Music.html">Music</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/TikTok/Post" data-name="tiktoker::tiktok::post">
+      <a href="../TikToker/TikTok/Post.html">Post</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/TikTok/PostCollection" data-name="tiktoker::tiktok::postcollection">
+      <a href="../TikToker/TikTok/PostCollection.html">PostCollection</a>
+      
+    </li>
+  
+  <li class="parent " data-id="TikToker/TikToker/TikTok/SearchResult" data-name="tiktoker::tiktok::searchresult">
+      <a href="../TikToker/TikTok/SearchResult.html">SearchResult</a>
+      
+        <ul>
+  
+  <li class=" " data-id="TikToker/TikToker/TikTok/SearchResult/User" data-name="tiktoker::tiktok::searchresult::user">
+      <a href="../TikToker/TikTok/SearchResult/User.html">User</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/TikTok/SearchResult/UserInfoConverter" data-name="tiktoker::tiktok::searchresult::userinfoconverter">
+      <a href="../TikToker/TikTok/SearchResult/UserInfoConverter.html">UserInfoConverter</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="TikToker/TikToker/TikTok/Video" data-name="tiktoker::tiktok::video">
+      <a href="../TikToker/TikTok/Video.html">Video</a>
+      
+        <ul>
+  
+  <li class=" " data-id="TikToker/TikToker/TikTok/Video/Challenge" data-name="tiktoker::tiktok::video::challenge">
+      <a href="../TikToker/TikTok/Video/Challenge.html">Challenge</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/TikTok/Video/Duet" data-name="tiktoker::tiktok::video::duet">
+      <a href="../TikToker/TikTok/Video/Duet.html">Duet</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/TikTok/Video/Stats" data-name="tiktoker::tiktok::video::stats">
+      <a href="../TikToker/TikTok/Video/Stats.html">Stats</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/TikTok/Video/TextExtra" data-name="tiktoker::tiktok::video::textextra">
+      <a href="../TikToker/TikTok/Video/TextExtra.html">TextExtra</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/TikTokerLogger" data-name="tiktoker::tiktokerlogger">
+      <a href="../TikToker/TikTokerLogger.html">TikTokerLogger</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/UserNotFoundError" data-name="tiktoker::usernotfounderror">
+      <a href="../TikToker/UserNotFoundError.html">UserNotFoundError</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/Util" data-name="tiktoker::util">
+      <a href="../TikToker/Util.html">Util</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> TikToker::Configuration
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../TikToker/Configuration.html">TikToker::Configuration</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      <a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L2" target="_blank">
+        tiktoker/configuration.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+  
+    <h2>
+      <a id="constant-summary" class="anchor" href="#constant-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+      Constant Summary
+    </h2>
+  
+  <dl>
+    
+      <dt class="entry-const" id="TIKTOK_HOST">
+        <strong>TIKTOK_HOST</strong> = <code><span class="s">&quot;www.tiktok.com&quot;</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="TIKTOK_PORTAL">
+        <strong>TIKTOK_PORTAL</strong> = <code><span class="s">&quot;https://www.tiktok.com&quot;</span></code>
+      </dt>
+      
+    
+  </dl>
+
+
+
+
+
+
+
+  <h2>
+    <a id="instance-method-summary" class="anchor" href="#instance-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#connect_timeout:Int32-instance-method" class="signature"><strong>#connect_timeout</strong> : Int32</a>
+        
+          <div class="summary"><p>Timeout waiting for TikTok server connection to open in seconds.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#connect_timeout=(connect_timeout:Int32)-instance-method" class="signature"><strong>#connect_timeout=</strong>(connect_timeout : Int32)</a>
+        
+          <div class="summary"><p>Timeout waiting for TikTok server connection to open in seconds.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#did:String-instance-method" class="signature"><strong>#did</strong> : String</a>
+        
+          <div class="summary"><p>TikTok device id.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#did=(did:String)-instance-method" class="signature"><strong>#did=</strong>(did : String)</a>
+        
+          <div class="summary"><p>TikTok device id.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#fast_update:Bool-instance-method" class="signature"><strong>#fast_update</strong> : Bool</a>
+        
+          <div class="summary"><p>Stop when encountering the first already-downloaded video.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#fast_update=(fast_update:Bool)-instance-method" class="signature"><strong>#fast_update=</strong>(fast_update : Bool)</a>
+        
+          <div class="summary"><p>Stop when encountering the first already-downloaded video.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#internal_user_agent:String-instance-method" class="signature"><strong>#internal_user_agent</strong> : String</a>
+        
+          <div class="summary"><p>User agent used by TikToker when there is no need to disguise itself, e.g.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#internal_user_agent=(internal_user_agent:String)-instance-method" class="signature"><strong>#internal_user_agent=</strong>(internal_user_agent : String)</a>
+        
+          <div class="summary"><p>User agent used by TikToker when there is no need to disguise itself, e.g.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#proxy_host:String?-instance-method" class="signature"><strong>#proxy_host</strong> : String?</a>
+        
+          <div class="summary"><p>Proxy host.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#proxy_host=(proxy_host:String?)-instance-method" class="signature"><strong>#proxy_host=</strong>(proxy_host : String?)</a>
+        
+          <div class="summary"><p>Proxy host.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#proxy_pass:String?-instance-method" class="signature"><strong>#proxy_pass</strong> : String?</a>
+        
+          <div class="summary"><p>Proxy password.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#proxy_pass=(proxy_pass:String?)-instance-method" class="signature"><strong>#proxy_pass=</strong>(proxy_pass : String?)</a>
+        
+          <div class="summary"><p>Proxy password.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#proxy_port:Int32?-instance-method" class="signature"><strong>#proxy_port</strong> : Int32?</a>
+        
+          <div class="summary"><p>Proxy port.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#proxy_port=(proxy_port:Int32?)-instance-method" class="signature"><strong>#proxy_port=</strong>(proxy_port : Int32?)</a>
+        
+          <div class="summary"><p>Proxy port.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#proxy_user:String?-instance-method" class="signature"><strong>#proxy_user</strong> : String?</a>
+        
+          <div class="summary"><p>Proxy username.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#proxy_user=(proxy_user:String?)-instance-method" class="signature"><strong>#proxy_user=</strong>(proxy_user : String?)</a>
+        
+          <div class="summary"><p>Proxy username.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#quiet:Bool-instance-method" class="signature"><strong>#quiet</strong> : Bool</a>
+        
+          <div class="summary"><p>Do not produce any output.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#quiet=(bool:Bool)-instance-method" class="signature"><strong>#quiet=</strong>(bool : Bool)</a>
+        
+          <div class="summary"><p>Changes the log severity to <code>Log::Severity::Error</code> if set to true.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#read_timeout:Int32-instance-method" class="signature"><strong>#read_timeout</strong> : Int32</a>
+        
+          <div class="summary"><p>Timeout when waiting for TikTok server to return data.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#read_timeout=(read_timeout:Int32)-instance-method" class="signature"><strong>#read_timeout=</strong>(read_timeout : Int32)</a>
+        
+          <div class="summary"><p>Timeout when waiting for TikTok server to return data.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#retry_attempts:Int32-instance-method" class="signature"><strong>#retry_attempts</strong> : Int32</a>
+        
+          <div class="summary"><p>Maximum number of retry attempts until a request is aborted.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#retry_attempts=(retry_attempts:Int32)-instance-method" class="signature"><strong>#retry_attempts=</strong>(retry_attempts : Int32)</a>
+        
+          <div class="summary"><p>Maximum number of retry attempts until a request is aborted.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#session_id:String?-instance-method" class="signature"><strong>#session_id</strong> : String?</a>
+        
+          <div class="summary"><p>Used to authenticate with TikTok API.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#session_id=(session_id:String?)-instance-method" class="signature"><strong>#session_id=</strong>(session_id : String?)</a>
+        
+          <div class="summary"><p>Used to authenticate with TikTok API.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#signature_server_timeout:Int32-instance-method" class="signature"><strong>#signature_server_timeout</strong> : Int32</a>
+        
+          <div class="summary"><p>Seconds to wait before timing out a connection request with an external signature server.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#signature_server_timeout=(signature_server_timeout:Int32)-instance-method" class="signature"><strong>#signature_server_timeout=</strong>(signature_server_timeout : Int32)</a>
+        
+          <div class="summary"><p>Seconds to wait before timing out a connection request with an external signature server.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#signature_server_url:String-instance-method" class="signature"><strong>#signature_server_url</strong> : String</a>
+        
+          <div class="summary"><p>External signature server used to sign TikTok API requests.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#signature_server_url=(signature_server_url:String)-instance-method" class="signature"><strong>#signature_server_url=</strong>(signature_server_url : String)</a>
+        
+          <div class="summary"><p>External signature server used to sign TikTok API requests.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tiktok_host:String-instance-method" class="signature"><strong>#tiktok_host</strong> : String</a>
+        
+          <div class="summary"><p>TikTok API host.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tiktok_host=(tiktok_host:String)-instance-method" class="signature"><strong>#tiktok_host=</strong>(tiktok_host : String)</a>
+        
+          <div class="summary"><p>TikTok API host.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tiktok_portal:String-instance-method" class="signature"><strong>#tiktok_portal</strong> : String</a>
+        
+          <div class="summary"><p>TikTok portal URL.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tiktok_portal=(tiktok_portal:String)-instance-method" class="signature"><strong>#tiktok_portal=</strong>(tiktok_portal : String)</a>
+        
+          <div class="summary"><p>TikTok portal URL.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#verbose:Bool-instance-method" class="signature"><strong>#verbose</strong> : Bool</a>
+        
+          <div class="summary"><p>Print debug information for each operation.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#verbose=(verbose:Bool)-instance-method" class="signature"><strong>#verbose=</strong>(verbose : Bool)</a>
+        
+          <div class="summary"><p>Print debug information for each operation.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#with(&):Nil-instance-method" class="signature"><strong>#with</strong>(&) : Nil</a>
+        
+          <div class="summary"><p>Configuration for TikToker.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#write_timeout:Int32-instance-method" class="signature"><strong>#write_timeout</strong> : Int32</a>
+        
+          <div class="summary"><p>Timeout when waiting for TikTok server to receive data.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#write_timeout=(write_timeout:Int32)-instance-method" class="signature"><strong>#write_timeout=</strong>(write_timeout : Int32)</a>
+        
+          <div class="summary"><p>Timeout when waiting for TikTok server to receive data.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+
+
+
+
+  <h2>
+    <a id="instance-method-detail" class="anchor" href="#instance-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="connect_timeout:Int32-instance-method">
+      <div class="signature">
+        
+        def <strong>connect_timeout</strong> : Int32
+
+        <a class="method-permalink" href="#connect_timeout:Int32-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Timeout waiting for TikTok server connection to open in seconds.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L33" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="connect_timeout=(connect_timeout:Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>connect_timeout=</strong>(connect_timeout : Int32)
+
+        <a class="method-permalink" href="#connect_timeout=(connect_timeout:Int32)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Timeout waiting for TikTok server connection to open in seconds.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L33" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="did:String-instance-method">
+      <div class="signature">
+        
+        def <strong>did</strong> : String
+
+        <a class="method-permalink" href="#did:String-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>TikTok device id. Keep in mind that this token is supposed to be
+long-lived and consistent between requests.</p>
+
+<pre><code class="language-crystal"><span class="t">TikToker</span><span class="t">::</span><span class="t">Util</span>.generate_did <span class="c"># =&gt; 3745502480601580487</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L67" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="did=(did:String)-instance-method">
+      <div class="signature">
+        
+        def <strong>did=</strong>(did : String)
+
+        <a class="method-permalink" href="#did=(did:String)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>TikTok device id. Keep in mind that this token is supposed to be
+long-lived and consistent between requests.</p>
+
+<pre><code class="language-crystal"><span class="t">TikToker</span><span class="t">::</span><span class="t">Util</span>.generate_did <span class="c"># =&gt; 3745502480601580487</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L67" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="fast_update:Bool-instance-method">
+      <div class="signature">
+        
+        def <strong>fast_update</strong> : Bool
+
+        <a class="method-permalink" href="#fast_update:Bool-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Stop when encountering the first already-downloaded video. This flag is
+recommended when you use TikToker to update your personal archive.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L26" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="fast_update=(fast_update:Bool)-instance-method">
+      <div class="signature">
+        
+        def <strong>fast_update=</strong>(fast_update : Bool)
+
+        <a class="method-permalink" href="#fast_update=(fast_update:Bool)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Stop when encountering the first already-downloaded video. This flag is
+recommended when you use TikToker to update your personal archive.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L26" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="internal_user_agent:String-instance-method">
+      <div class="signature">
+        
+        def <strong>internal_user_agent</strong> : String
+
+        <a class="method-permalink" href="#internal_user_agent:String-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>User agent used by TikToker when there is no need to disguise itself,
+e.g. in requests with an external signature server.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L16" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="internal_user_agent=(internal_user_agent:String)-instance-method">
+      <div class="signature">
+        
+        def <strong>internal_user_agent=</strong>(internal_user_agent : String)
+
+        <a class="method-permalink" href="#internal_user_agent=(internal_user_agent:String)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>User agent used by TikToker when there is no need to disguise itself,
+e.g. in requests with an external signature server.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L16" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="proxy_host:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>proxy_host</strong> : String?
+
+        <a class="method-permalink" href="#proxy_host:String?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Proxy host.</p>
+
+<pre><code class="language-crystal">config.proxy_host <span class="o">=</span> <span class="s">&quot;localhost&quot;</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L74" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="proxy_host=(proxy_host:String?)-instance-method">
+      <div class="signature">
+        
+        def <strong>proxy_host=</strong>(proxy_host : String?)
+
+        <a class="method-permalink" href="#proxy_host=(proxy_host:String?)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Proxy host.</p>
+
+<pre><code class="language-crystal">config.proxy_host <span class="o">=</span> <span class="s">&quot;localhost&quot;</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L74" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="proxy_pass:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>proxy_pass</strong> : String?
+
+        <a class="method-permalink" href="#proxy_pass:String?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Proxy password.</p>
+
+<pre><code class="language-crystal">config.proxy_user <span class="o">=</span> <span class="s">&quot;password&quot;</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L95" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="proxy_pass=(proxy_pass:String?)-instance-method">
+      <div class="signature">
+        
+        def <strong>proxy_pass=</strong>(proxy_pass : String?)
+
+        <a class="method-permalink" href="#proxy_pass=(proxy_pass:String?)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Proxy password.</p>
+
+<pre><code class="language-crystal">config.proxy_user <span class="o">=</span> <span class="s">&quot;password&quot;</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L95" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="proxy_port:Int32?-instance-method">
+      <div class="signature">
+        
+        def <strong>proxy_port</strong> : Int32?
+
+        <a class="method-permalink" href="#proxy_port:Int32?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Proxy port.</p>
+
+<pre><code class="language-crystal">config.proxy_port <span class="o">=</span> <span class="n">8080</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L81" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="proxy_port=(proxy_port:Int32?)-instance-method">
+      <div class="signature">
+        
+        def <strong>proxy_port=</strong>(proxy_port : Int32?)
+
+        <a class="method-permalink" href="#proxy_port=(proxy_port:Int32?)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Proxy port.</p>
+
+<pre><code class="language-crystal">config.proxy_port <span class="o">=</span> <span class="n">8080</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L81" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="proxy_user:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>proxy_user</strong> : String?
+
+        <a class="method-permalink" href="#proxy_user:String?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Proxy username.</p>
+
+<pre><code class="language-crystal">config.proxy_user <span class="o">=</span> <span class="s">&quot;username&quot;</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L88" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="proxy_user=(proxy_user:String?)-instance-method">
+      <div class="signature">
+        
+        def <strong>proxy_user=</strong>(proxy_user : String?)
+
+        <a class="method-permalink" href="#proxy_user=(proxy_user:String?)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Proxy username.</p>
+
+<pre><code class="language-crystal">config.proxy_user <span class="o">=</span> <span class="s">&quot;username&quot;</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L88" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="quiet:Bool-instance-method">
+      <div class="signature">
+        
+        def <strong>quiet</strong> : Bool
+
+        <a class="method-permalink" href="#quiet:Bool-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Do not produce any output. This makes TikToker suitable as a cron job.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L49" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="quiet=(bool:Bool)-instance-method">
+      <div class="signature">
+        
+        def <strong>quiet=</strong>(bool : Bool)
+
+        <a class="method-permalink" href="#quiet=(bool:Bool)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Changes the log severity to <code>Log::Severity::Error</code> if set to true.</p>
+
+<pre><code class="language-crystal">config.quiet <span class="o">=</span> <span class="n">true</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L56" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="read_timeout:Int32-instance-method">
+      <div class="signature">
+        
+        def <strong>read_timeout</strong> : Int32
+
+        <a class="method-permalink" href="#read_timeout:Int32-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Timeout when waiting for TikTok server to return data.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L39" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="read_timeout=(read_timeout:Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>read_timeout=</strong>(read_timeout : Int32)
+
+        <a class="method-permalink" href="#read_timeout=(read_timeout:Int32)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Timeout when waiting for TikTok server to return data.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L39" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="retry_attempts:Int32-instance-method">
+      <div class="signature">
+        
+        def <strong>retry_attempts</strong> : Int32
+
+        <a class="method-permalink" href="#retry_attempts:Int32-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Maximum number of retry attempts until a request is aborted. When using
+TikTok as a library, you might want to set it to zero.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L43" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="retry_attempts=(retry_attempts:Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>retry_attempts=</strong>(retry_attempts : Int32)
+
+        <a class="method-permalink" href="#retry_attempts=(retry_attempts:Int32)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Maximum number of retry attempts until a request is aborted. When using
+TikTok as a library, you might want to set it to zero.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L43" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="session_id:String?-instance-method">
+      <div class="signature">
+        
+        def <strong>session_id</strong> : String?
+
+        <a class="method-permalink" href="#session_id:String?-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Used to authenticate with TikTok API. Useful to browse and download
+private profiles.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L30" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="session_id=(session_id:String?)-instance-method">
+      <div class="signature">
+        
+        def <strong>session_id=</strong>(session_id : String?)
+
+        <a class="method-permalink" href="#session_id=(session_id:String?)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Used to authenticate with TikTok API. Useful to browse and download
+private profiles.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L30" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="signature_server_timeout:Int32-instance-method">
+      <div class="signature">
+        
+        def <strong>signature_server_timeout</strong> : Int32
+
+        <a class="method-permalink" href="#signature_server_timeout:Int32-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Seconds to wait before timing out a connection request with an external
+signature server.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L12" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="signature_server_timeout=(signature_server_timeout:Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>signature_server_timeout=</strong>(signature_server_timeout : Int32)
+
+        <a class="method-permalink" href="#signature_server_timeout=(signature_server_timeout:Int32)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Seconds to wait before timing out a connection request with an external
+signature server.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L12" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="signature_server_url:String-instance-method">
+      <div class="signature">
+        
+        def <strong>signature_server_url</strong> : String
+
+        <a class="method-permalink" href="#signature_server_url:String-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>External signature server used to sign TikTok API requests. By default,
+the signature server is expected to be listening locally port 3000.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L8" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="signature_server_url=(signature_server_url:String)-instance-method">
+      <div class="signature">
+        
+        def <strong>signature_server_url=</strong>(signature_server_url : String)
+
+        <a class="method-permalink" href="#signature_server_url=(signature_server_url:String)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>External signature server used to sign TikTok API requests. By default,
+the signature server is expected to be listening locally port 3000.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L8" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tiktok_host:String-instance-method">
+      <div class="signature">
+        
+        def <strong>tiktok_host</strong> : String
+
+        <a class="method-permalink" href="#tiktok_host:String-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>TikTok API host.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L19" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tiktok_host=(tiktok_host:String)-instance-method">
+      <div class="signature">
+        
+        def <strong>tiktok_host=</strong>(tiktok_host : String)
+
+        <a class="method-permalink" href="#tiktok_host=(tiktok_host:String)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>TikTok API host.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L19" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tiktok_portal:String-instance-method">
+      <div class="signature">
+        
+        def <strong>tiktok_portal</strong> : String
+
+        <a class="method-permalink" href="#tiktok_portal:String-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>TikTok portal URL.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L22" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tiktok_portal=(tiktok_portal:String)-instance-method">
+      <div class="signature">
+        
+        def <strong>tiktok_portal=</strong>(tiktok_portal : String)
+
+        <a class="method-permalink" href="#tiktok_portal=(tiktok_portal:String)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>TikTok portal URL.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L22" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="verbose:Bool-instance-method">
+      <div class="signature">
+        
+        def <strong>verbose</strong> : Bool
+
+        <a class="method-permalink" href="#verbose:Bool-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Print debug information for each operation.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L46" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="verbose=(verbose:Bool)-instance-method">
+      <div class="signature">
+        
+        def <strong>verbose=</strong>(verbose : Bool)
+
+        <a class="method-permalink" href="#verbose=(verbose:Bool)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Print debug information for each operation.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L46" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="with(&):Nil-instance-method">
+      <div class="signature">
+        
+        def <strong>with</strong>(&) : Nil
+
+        <a class="method-permalink" href="#with(&):Nil-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Configuration for TikToker.</p>
+
+<pre><code class="language-crystal">config <span class="o">=</span> <span class="t">TikToker</span><span class="t">::</span><span class="t">Configuration</span>.<span class="k">new</span>
+config.<span class="k">with</span> <span class="k">do</span> <span class="o">|</span>config<span class="o">|</span>
+  config.signature_server_url <span class="o">=</span> <span class="s">&quot;https://signature.server&quot;</span>
+<span class="k">end</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L105" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="write_timeout:Int32-instance-method">
+      <div class="signature">
+        
+        def <strong>write_timeout</strong> : Int32
+
+        <a class="method-permalink" href="#write_timeout:Int32-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Timeout when waiting for TikTok server to receive data.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L36" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="write_timeout=(write_timeout:Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>write_timeout=</strong>(write_timeout : Int32)
+
+        <a class="method-permalink" href="#write_timeout=(write_timeout:Int32)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Timeout when waiting for TikTok server to receive data.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker/configuration.cr#L36" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>

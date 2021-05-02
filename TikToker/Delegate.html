@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.36.1">
+<meta name="crystal_docs.project_version" content="main">
+<meta name="crystal_docs.project_name" content="TikToker">
+
+
+    <link rel="canonical" href="https://absolab.xyz/tiktoker/TikToker/Delegate.html">
+
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/doc.js"></script>
+
+  <meta name="repository-name" content="TikToker">
+  <title>TikToker::Delegate - TikToker main</title>
+  <script type="text/javascript">
+    CrystalDocs.base_path = "../";
+  </script>
+</head>
+<body>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="project-summary">
+      <h1 class="project-name">
+        <a href="../index.html">
+          TikToker
+        </a>
+      </h1>
+
+      <span class="project-version">
+        main
+      </span>
+    </div>
+  </div>
+
+  <div class="search-results hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class=" " data-id="TikToker/OptionParser" data-name="optionparser">
+      <a href="../OptionParser.html">OptionParser</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="TikToker/TikToker" data-name="tiktoker">
+      <a href="../TikToker.html">TikToker</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="TikToker/TikToker/CLI" data-name="tiktoker::cli">
+      <a href="../TikToker/CLI.html">CLI</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="TikToker/TikToker/CLI/Command" data-name="tiktoker::cli::command">
+      <a href="../TikToker/CLI/Command.html">Command</a>
+      
+        <ul>
+  
+  <li class=" " data-id="TikToker/TikToker/CLI/Command/DownloadBatch" data-name="tiktoker::cli::command::downloadbatch">
+      <a href="../TikToker/CLI/Command/DownloadBatch.html">DownloadBatch</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/CLI/Command/DownloadUser" data-name="tiktoker::cli::command::downloaduser">
+      <a href="../TikToker/CLI/Command/DownloadUser.html">DownloadUser</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/CLI/Command/FindUser" data-name="tiktoker::cli::command::finduser">
+      <a href="../TikToker/CLI/Command/FindUser.html">FindUser</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/CLI/Command/SearchUser" data-name="tiktoker::cli::command::searchuser">
+      <a href="../TikToker/CLI/Command/SearchUser.html">SearchUser</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/CLI/CommandHelpers" data-name="tiktoker::cli::commandhelpers">
+      <a href="../TikToker/CLI/CommandHelpers.html">CommandHelpers</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/CLI/FileProcessor" data-name="tiktoker::cli::fileprocessor">
+      <a href="../TikToker/CLI/FileProcessor.html">FileProcessor</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/CLI/InlineTable" data-name="tiktoker::cli::inlinetable">
+      <a href="../TikToker/CLI/InlineTable.html">InlineTable</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="TikToker/TikToker/Client" data-name="tiktoker::client">
+      <a href="../TikToker/Client.html">Client</a>
+      
+        <ul>
+  
+  <li class=" " data-id="TikToker/TikToker/Client/PortalClient" data-name="tiktoker::client::portalclient">
+      <a href="../TikToker/Client/PortalClient.html">PortalClient</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/Client/WebApiClient" data-name="tiktoker::client::webapiclient">
+      <a href="../TikToker/Client/WebApiClient.html">WebApiClient</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/Configuration" data-name="tiktoker::configuration">
+      <a href="../TikToker/Configuration.html">Configuration</a>
+      
+    </li>
+  
+  <li class=" current" data-id="TikToker/TikToker/Delegate" data-name="tiktoker::delegate">
+      <a href="../TikToker/Delegate.html">Delegate</a>
+      
+    </li>
+  
+  <li class="parent " data-id="TikToker/TikToker/Downloader" data-name="tiktoker::downloader">
+      <a href="../TikToker/Downloader.html">Downloader</a>
+      
+        <ul>
+  
+  <li class=" " data-id="TikToker/TikToker/Downloader/VideoDownloader" data-name="tiktoker::downloader::videodownloader">
+      <a href="../TikToker/Downloader/VideoDownloader.html">VideoDownloader</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/NoPostsError" data-name="tiktoker::nopostserror">
+      <a href="../TikToker/NoPostsError.html">NoPostsError</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/PortalExtractionError" data-name="tiktoker::portalextractionerror">
+      <a href="../TikToker/PortalExtractionError.html">PortalExtractionError</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/ProfileIterator" data-name="tiktoker::profileiterator">
+      <a href="../TikToker/ProfileIterator.html">ProfileIterator</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/Request" data-name="tiktoker::request">
+      <a href="../TikToker/Request.html">Request</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/RequestBuilder" data-name="tiktoker::requestbuilder">
+      <a href="../TikToker/RequestBuilder.html">RequestBuilder</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/RequestError" data-name="tiktoker::requesterror">
+      <a href="../TikToker/RequestError.html">RequestError</a>
+      
+    </li>
+  
+  <li class="parent " data-id="TikToker/TikToker/RequestSigner" data-name="tiktoker::requestsigner">
+      <a href="../TikToker/RequestSigner.html">RequestSigner</a>
+      
+        <ul>
+  
+  <li class=" " data-id="TikToker/TikToker/RequestSigner/Backend" data-name="tiktoker::requestsigner::backend">
+      <a href="../TikToker/RequestSigner/Backend.html">Backend</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/RequestSigner/External" data-name="tiktoker::requestsigner::external">
+      <a href="../TikToker/RequestSigner/External.html">External</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/RetriesExaustedError" data-name="tiktoker::retriesexaustederror">
+      <a href="../TikToker/RetriesExaustedError.html">RetriesExaustedError</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/SecUID" data-name="tiktoker::secuid">
+      <a href="../TikToker/SecUID.html">SecUID</a>
+      
+    </li>
+  
+  <li class="parent " data-id="TikToker/TikToker/SignedRequest" data-name="tiktoker::signedrequest">
+      <a href="../TikToker/SignedRequest.html">SignedRequest</a>
+      
+        <ul>
+  
+  <li class=" " data-id="TikToker/TikToker/SignedRequest/Navigator" data-name="tiktoker::signedrequest::navigator">
+      <a href="../TikToker/SignedRequest/Navigator.html">Navigator</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="TikToker/TikToker/TikTok" data-name="tiktoker::tiktok">
+      <a href="../TikToker/TikTok.html">TikTok</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="TikToker/TikToker/TikTok/Creator" data-name="tiktoker::tiktok::creator">
+      <a href="../TikToker/TikTok/Creator.html">Creator</a>
+      
+        <ul>
+  
+  <li class=" " data-id="TikToker/TikToker/TikTok/Creator/PrivacyToggle" data-name="tiktoker::tiktok::creator::privacytoggle">
+      <a href="../TikToker/TikTok/Creator/PrivacyToggle.html">PrivacyToggle</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/TikTok/Creator/Stats" data-name="tiktoker::tiktok::creator::stats">
+      <a href="../TikToker/TikTok/Creator/Stats.html">Stats</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="TikToker/TikToker/TikTok/InitialProps" data-name="tiktoker::tiktok::initialprops">
+      <a href="../TikToker/TikTok/InitialProps.html">InitialProps</a>
+      
+        <ul>
+  
+  <li class=" " data-id="TikToker/TikToker/TikTok/InitialProps/Item" data-name="tiktoker::tiktok::initialprops::item">
+      <a href="../TikToker/TikTok/InitialProps/Item.html">Item</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/TikTok/InitialProps/UserInfo" data-name="tiktoker::tiktok::initialprops::userinfo">
+      <a href="../TikToker/TikTok/InitialProps/UserInfo.html">UserInfo</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/TikTok/Music" data-name="tiktoker::tiktok::music">
+      <a href="../TikToker/TikTok/Music.html">Music</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/TikTok/Post" data-name="tiktoker::tiktok::post">
+      <a href="../TikToker/TikTok/Post.html">Post</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/TikTok/PostCollection" data-name="tiktoker::tiktok::postcollection">
+      <a href="../TikToker/TikTok/PostCollection.html">PostCollection</a>
+      
+    </li>
+  
+  <li class="parent " data-id="TikToker/TikToker/TikTok/SearchResult" data-name="tiktoker::tiktok::searchresult">
+      <a href="../TikToker/TikTok/SearchResult.html">SearchResult</a>
+      
+        <ul>
+  
+  <li class=" " data-id="TikToker/TikToker/TikTok/SearchResult/User" data-name="tiktoker::tiktok::searchresult::user">
+      <a href="../TikToker/TikTok/SearchResult/User.html">User</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/TikTok/SearchResult/UserInfoConverter" data-name="tiktoker::tiktok::searchresult::userinfoconverter">
+      <a href="../TikToker/TikTok/SearchResult/UserInfoConverter.html">UserInfoConverter</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="TikToker/TikToker/TikTok/Video" data-name="tiktoker::tiktok::video">
+      <a href="../TikToker/TikTok/Video.html">Video</a>
+      
+        <ul>
+  
+  <li class=" " data-id="TikToker/TikToker/TikTok/Video/Challenge" data-name="tiktoker::tiktok::video::challenge">
+      <a href="../TikToker/TikTok/Video/Challenge.html">Challenge</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/TikTok/Video/Duet" data-name="tiktoker::tiktok::video::duet">
+      <a href="../TikToker/TikTok/Video/Duet.html">Duet</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/TikTok/Video/Stats" data-name="tiktoker::tiktok::video::stats">
+      <a href="../TikToker/TikTok/Video/Stats.html">Stats</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/TikTok/Video/TextExtra" data-name="tiktoker::tiktok::video::textextra">
+      <a href="../TikToker/TikTok/Video/TextExtra.html">TextExtra</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/TikTokerLogger" data-name="tiktoker::tiktokerlogger">
+      <a href="../TikToker/TikTokerLogger.html">TikTokerLogger</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/UserNotFoundError" data-name="tiktoker::usernotfounderror">
+      <a href="../TikToker/UserNotFoundError.html">UserNotFoundError</a>
+      
+    </li>
+  
+  <li class=" " data-id="TikToker/TikToker/Util" data-name="tiktoker::util">
+      <a href="../TikToker/Util.html">Util</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">module</span> TikToker::Delegate
+
+</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      <a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker.cr#L25" target="_blank">
+        tiktoker.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="instance-method-summary" class="anchor" href="#instance-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#find_user(*args,**options)-instance-method" class="signature"><strong>#find_user</strong>(*args, **options)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#find_user(*args,**options,&)-instance-method" class="signature"><strong>#find_user</strong>(*args, **options, &)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#search_user(*args,**options)-instance-method" class="signature"><strong>#search_user</strong>(*args, **options)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#search_user(*args,**options,&)-instance-method" class="signature"><strong>#search_user</strong>(*args, **options, &)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#user_profile_feed(*args,**options)-instance-method" class="signature"><strong>#user_profile_feed</strong>(*args, **options)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#user_profile_feed(*args,**options,&)-instance-method" class="signature"><strong>#user_profile_feed</strong>(*args, **options, &)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+</div>
+
+
+
+
+
+
+  <h2>
+    <a id="instance-method-detail" class="anchor" href="#instance-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="find_user(*args,**options)-instance-method">
+      <div class="signature">
+        
+        def <strong>find_user</strong>(*args, **options)
+
+        <a class="method-permalink" href="#find_user(*args,**options)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker.cr#L26" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="find_user(*args,**options,&)-instance-method">
+      <div class="signature">
+        
+        def <strong>find_user</strong>(*args, **options, &)
+
+        <a class="method-permalink" href="#find_user(*args,**options,&)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker.cr#L26" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="search_user(*args,**options)-instance-method">
+      <div class="signature">
+        
+        def <strong>search_user</strong>(*args, **options)
+
+        <a class="method-permalink" href="#search_user(*args,**options)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker.cr#L26" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="search_user(*args,**options,&)-instance-method">
+      <div class="signature">
+        
+        def <strong>search_user</strong>(*args, **options, &)
+
+        <a class="method-permalink" href="#search_user(*args,**options,&)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker.cr#L26" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="user_profile_feed(*args,**options)-instance-method">
+      <div class="signature">
+        
+        def <strong>user_profile_feed</strong>(*args, **options)
+
+        <a class="method-permalink" href="#user_profile_feed(*args,**options)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker.cr#L26" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="user_profile_feed(*args,**options,&)-instance-method">
+      <div class="signature">
+        
+        def <strong>user_profile_feed</strong>(*args, **options, &)
+
+        <a class="method-permalink" href="#user_profile_feed(*args,**options,&)-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kandayo/tiktoker/blob/1f83c16556a314e1da3ce902a443ffa14c900de9/src/tiktoker.cr#L26" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>
