@@ -2,13 +2,17 @@
 
 [![Built with Crystal 0.36.1](https://img.shields.io/badge/Crystal-1.0.0-%23333333)](https://crystal-lang.org/)
 [![GitHub release](https://img.shields.io/github/release/kandayo/tiktoker.svg?label=Release)](https://github.com/kandayo/tiktoker/releases)
+[![CI](https://github.com/kandayo/tiktoker/actions/workflows/ci.yml/badge.svg)](https://github.com/kandayo/tiktoker/actions/workflows/ci.yml)
+[![Documentation](https://github.com/kandayo/tiktoker/actions/workflows/docs.yml/badge.svg)](https://github.com/kandayo/tiktoker/actions/workflows/docs.yml)
 
 TikToker is a **command-line client for TikTok**. It allows you to search and
 browse users from the terminal, and to download videos and its metadata from an
 user profile or from a hashtag.
 
 For now, you'll have to spin up a signature server, used to sign requests to
-the Tiktok API. See [**TikTok Passport**](https://github.com/kandayo/tiktok-passport).
+the Tiktok API.
+
+See [**TikTok Passport**](https://github.com/kandayo/tiktok-passport).
 
 ## Index
 
